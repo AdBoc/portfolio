@@ -3,9 +3,11 @@ import React from "react"
 import Section from "../styles/Section"
 
 import styled from "styled-components"
-import SectionTitle from "../SectionTitle"
+import SectionTitle from "../styles/SectionTitle"
 
 const EducationWrapper = styled.div`
+  width: fit-content;
+  margin: 2.5em auto;
   .uni{
     font-size: 1.2em;
   }
@@ -20,7 +22,9 @@ const EducationWrapper = styled.div`
 const Education = () => {
   return (
     <Section>
-      <SectionTitle title="Wykształcenie" />
+      <SectionTitle>
+        <h1>Wykształcenie</h1>
+      </SectionTitle>
       <EducationWrapper>
         <p className="uni">Akademia Górniczo Hutnicza</p>
         <p className="date">2017-obecnie</p>

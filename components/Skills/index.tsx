@@ -17,11 +17,17 @@ import GatsbySVG from "../../static/assets/gatsby.svg"
 import GoSVG from "../../static/assets/go.svg"
 
 import Section from "../styles/Section"
-import SectionTitle from "../SectionTitle"
+import SectionTitle from "../styles/SectionTitle"
 
-const SkillsList = styled.div`
-  display: flex;
-  flex-direction: column;
+const SkillsColumn = styled.div`
+  border-right: 1px solid #b7b7b7;
+  flex-grow: 1;
+  flex-basis: 0;
+  padding: 0.75em;
+  
+  &:last-child {
+    border-right: none;
+  }
   
  .skill {
   display: flex;
@@ -32,33 +38,67 @@ const SkillsList = styled.div`
  }
  
  p {
+   font-size: 0.85em;
    margin-left: 0.3em;
-   min-width: 5em;
  }
+ 
+  @media (max-width: 600px) {
+    border-right: none;
+    border-bottom: 1px solid #b7b7b7;
+    &:last-child {
+      border-bottom: none;
+    }
+  }
+`
+
+const SkillsContainer = styled.div`
+  text-align: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  
+  border: 1px solid #b7b7b7;
+  border-radius: 12px;
+  box-shadow: 0 5px 5px 0 rgba(233, 240, 243, 0.5), 0 0 0 1px #E6ECF8;
+  
+  @media (max-width: 600px) {
+    flex-direction: column;
+    max-width: 17.5em;
+    margin: auto;
+  }
+`
+
+const Description = styled.div`
+  text-align: center;
+  margin-top: 1.5em;
+  .desc {
+     margin-top: 1em;
+  }
+  .small-font {
+    font-size: 0.6em;
+  }
 `
 
 const Skills = () => {
   return (
     <Section>
-      <SectionTitle title="Umiejętności"/>
-      <h2>Technologie</h2>
-      <div>
-        <SkillsList>
-          <div className="skill">
-            <HtmlSVG />
-            <p>HTML</p>
-          </div>
+      <SectionTitle>
+        <h1>Umiejętności</h1>
+      </SectionTitle>
+      <SkillsContainer>
+        <SkillsColumn>
+          <h2>Front-end</h2>
           <div className="skill">
             <CssSVG />
             <p>CSS</p>
           </div>
           <div className="skill">
-            <JsSVG />
-            <p>JavaScript</p>
+            <SassSVG />
+            <p>Sass</p>
           </div>
           <div className="skill">
-            <TsSVG />
-            <p>TypeScript</p>
+            <HtmlSVG />
+            <p>HTML</p>
           </div>
           <div className="skill">
             <ReactSVG />
@@ -69,50 +109,54 @@ const Skills = () => {
             <p>Redux</p>
           </div>
           <div className="skill">
-            <SassSVG />
-            <p>Sass</p>
+            <GatsbySVG />
+            <p>Gatsby</p>
+          </div>
+          <div className="skill">
+            <JsSVG />
+            <p>JavaScript</p>
+          </div>
+          <div className="skill">
+            <TsSVG />
+            <p>TypeScript</p>
           </div>
           <div className="skill">
             <p>Styled Components</p>
           </div>
-        </SkillsList>
-        <h2>Testy</h2>
-        <SkillsList>
+        </SkillsColumn>
+        <SkillsColumn>
+          <h2>Testy</h2>
           <div className="skill">
-            <p>React Testing Library</p>
+            <JestSVG />
+            <p>Jest</p>
           </div>
           <div className="skill">
             <MochaSVG />
             <p>Mocha</p>
           </div>
           <div className="skill">
-            <JestSVG />
-            <p>Jest</p>
+            <p>React Testing Library</p>
           </div>
-        </SkillsList>
-      </div>
-      <div>
-        <h2>Technologie, które używałem, ale znam w stopniu bardziej podstawowym</h2>
-        <SkillsList>
-          <div className="skill">
-            <NodeSVG />
-            <p>Node.js</p>
-          </div>
+        </SkillsColumn>
+        <SkillsColumn>
+          <h2>Back-end</h2>
           <div className="skill">
             <GoSVG />
             <p>Go</p>
           </div>
           <div className="skill">
-            <GatsbySVG />
-            <p>Gatsby</p>
+            <NodeSVG />
+            <p>Node.js</p>
           </div>
-        </SkillsList>
-      </div>
-      <p>Wiem czym są i jak korzystać z: webpack, eslint, babel, Git, GitHub</p>
-      <div>
-        <p>Język angielski: B2</p>
-        <p>(Nie mam problemów z czytaniem dokumantacji)</p>
-      </div>
+        </SkillsColumn>
+      </SkillsContainer>
+      <Description>
+        <p className="desc">Wiem czym są i jak korzystać z: <b>Webpack</b>, <b>Eslint</b>, <b>Babel</b>, <b>Git</b>, <b>GitHub</b></p>
+        <div>
+          <p className="desc">Język angielski: <b>B2</b></p>
+          <p className="small-font">(Nie mam problemów z czytaniem dokumantacji)</p>
+        </div>
+      </Description>
     </Section>
   )
 }

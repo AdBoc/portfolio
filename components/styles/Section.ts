@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 const Section = styled.section`
-  max-width: 35em;
+  max-width: 40em;
   //width: fit-content;
   margin: 2.5em auto;
 `

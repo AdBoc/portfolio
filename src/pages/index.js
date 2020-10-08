@@ -7,25 +7,38 @@ import Skills from "../../components/Skills"
 import Footer from "../../components/Footer"
 
 import "../../static/normalize.css"
+
 import styled from "styled-components"
 
-const BreakLine = styled.div`
-  margin: 10px 0;
-  height: 0;
-  border-image: linear-gradient(to right,rgba(0,0,0,0),rgba(0,0,0,0.5),rgba(0,0,0,0)) 100% 0 0 0;
-  border-style: solid;
-  border-width: thin;
+const Header = styled.header`
+  background-color: black;
+  width: 100%;
+  height: 12.5em;
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0 calc(100% - 60px));
+  color: white;
+  
+  .testing-hard {
+    float: right;
+    margin: 1.25em 0;
+  }
+  .nav-item {
+    display: inline;
+    margin-right: 2em;
+  }
 `
 
 export default function Home() {
   return (
     <>
+      <Header>
+        <div className="testing-hard">
+          <p className="nav-item">Projekty</p>
+          <p className="nav-item">CV</p>
+        </div>
+      </Header>
       <AboutMe />
-      {/*<BreakLine />*/}
       <Education />
-      {/*<BreakLine />*/}
       <Skills />
-      {/*<BreakLine />*/}
       <Projects />
       <Footer />
     </>

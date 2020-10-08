@@ -20,6 +20,15 @@ p, h1, span, li, h2 {
     font-family: "Roboto", "Times New Roman", sans-serif;
 }
 
+h1 {
+    font-size: 2em;
+    margin: 0.67em 0;
+}
+
+h2 {
+    font-size: 1em;
+}
+
 p {
     margin: 0;
 }
@@ -35,11 +44,6 @@ body {
 
 main {
     display: block;
-}
-
-h1 {
-    font-size: 2em;
-    margin: 0.67em 0;
 }
 
 hr {
