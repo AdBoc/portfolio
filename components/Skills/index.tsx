@@ -56,6 +56,7 @@ const SkillsContainer = styled.div`
   display: flex;
   flex-direction: row;
   justify-content: center;
+  background-color: white;
   
   border: 1px solid #b7b7b7;
   border-radius: 12px;
@@ -154,7 +155,7 @@ const Skills = () => {
         <p className="desc">Wiem czym są i jak korzystać z: <b>Webpack</b>, <b>Eslint</b>, <b>Babel</b>, <b>Git</b>, <b>GitHub</b></p>
         <div>
           <p className="desc">Język angielski: <b>B2</b></p>
-          <p className="small-font">(Nie mam problemów z czytaniem dokumantacji)</p>
+          <p className="small-font">(Nie mam problemów z czytaniem dokumentacji)</p>
         </div>
       </Description>
     </Section>

@@ -1,6 +1,16 @@
 import React from "react"
-import Section from "../styles/Section"
+
 import SectionTitle from "../styles/SectionTitle"
+
+import styled from "styled-components"
+
+const Section = styled.section`
+  max-width: 40em;
+  margin: 2.5em auto;
+  p {
+    margin: 2em 3em 0 3em;
+  }
+`
 
 const AboutMe = () => {
   return (

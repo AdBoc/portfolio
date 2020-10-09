@@ -1,8 +1,8 @@
 import React from "react"
 
-import Section from "../styles/Section"
-
 import styled from "styled-components"
+
+// import Section from "../styles/Section"
 import SectionTitle from "../styles/SectionTitle"
 
 const EducationWrapper = styled.div`
@@ -17,6 +17,11 @@ const EducationWrapper = styled.div`
   .class {
     font-size: 0.95em;    
   }
+`
+
+const Section = styled.section`
+  max-width: 40em;
+  margin: 2.5em auto;
 `
 
 const Education = () => {
