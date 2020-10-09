@@ -2,7 +2,6 @@ import React from "react"
 
 import styled from "styled-components"
 
-// import Section from "../styles/Section"
 import SectionTitle from "../styles/SectionTitle"
 
 const EducationWrapper = styled.div`

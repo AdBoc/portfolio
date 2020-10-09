@@ -2,7 +2,6 @@ import React from "react"
 import styled from "styled-components"
 
 import CssSVG from "../../static/assets/css.svg"
-import HtmlSVG from "../../static/assets/html.svg"
 import JsSVG from "../../static/assets/javascript.svg"
 import ReactSVG from "../../static/assets/reactLogo.svg"
 import ReduxSVG from "../../static/assets/redux.svg"
@@ -18,6 +17,7 @@ import GoSVG from "../../static/assets/go.svg"
 
 import Section from "../styles/Section"
 import SectionTitle from "../styles/SectionTitle"
+import Skill from "./Skill"
 
 const SkillsColumn = styled.div`
   border-right: 1px solid #b7b7b7;
@@ -28,20 +28,7 @@ const SkillsColumn = styled.div`
   &:last-child {
     border-right: none;
   }
-  
- .skill {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  padding: 0.3em;
-  justify-content: center;
- }
- 
- p {
-   font-size: 0.85em;
-   margin-left: 0.3em;
- }
- 
+   
   @media (max-width: 600px) {
     border-right: none;
     border-bottom: 1px solid #b7b7b7;
@@ -89,66 +76,25 @@ const Skills = () => {
       <SkillsContainer>
         <SkillsColumn>
           <h2>Front-end</h2>
-          <div className="skill">
-            <CssSVG />
-            <p>CSS</p>
-          </div>
-          <div className="skill">
-            <SassSVG />
-            <p>Sass</p>
-          </div>
-          <div className="skill">
-            <HtmlSVG />
-            <p>HTML</p>
-          </div>
-          <div className="skill">
-            <ReactSVG />
-            <p>React</p>
-          </div>
-          <div className="skill">
-            <ReduxSVG />
-            <p>Redux</p>
-          </div>
-          <div className="skill">
-            <GatsbySVG />
-            <p>Gatsby</p>
-          </div>
-          <div className="skill">
-            <JsSVG />
-            <p>JavaScript</p>
-          </div>
-          <div className="skill">
-            <TsSVG />
-            <p>TypeScript</p>
-          </div>
-          <div className="skill">
-            <p>Styled Components</p>
-          </div>
+          <Skill label="CSS" svg={<CssSVG />} />
+          <Skill label="HTML" svg={<SassSVG />} />
+          <Skill label="React" svg={<ReactSVG />} />
+          <Skill label="Redux" svg={<ReduxSVG />} />
+          <Skill label="Gatsby" svg={<GatsbySVG />} />
+          <Skill label="Javascript" svg={<JsSVG />} />
+          <Skill label="Typescript" svg={<TsSVG />} />
+          <Skill label="Styled Components" />
         </SkillsColumn>
         <SkillsColumn>
           <h2>Testy</h2>
-          <div className="skill">
-            <JestSVG />
-            <p>Jest</p>
-          </div>
-          <div className="skill">
-            <MochaSVG />
-            <p>Mocha</p>
-          </div>
-          <div className="skill">
-            <p>React Testing Library</p>
-          </div>
+          <Skill label="Jest" svg={<JestSVG />} />
+          <Skill label="Mocha" svg={<MochaSVG />} />
+          <Skill label="React Testing Library" />
         </SkillsColumn>
         <SkillsColumn>
           <h2>Back-end</h2>
-          <div className="skill">
-            <GoSVG />
-            <p>Go</p>
-          </div>
-          <div className="skill">
-            <NodeSVG />
-            <p>Node.js</p>
-          </div>
+          <Skill label="Go" svg={<GoSVG />} />
+          <Skill label="Node.js" svg={<NodeSVG />} />
         </SkillsColumn>
       </SkillsContainer>
       <Description>
