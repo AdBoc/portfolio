@@ -19,7 +19,7 @@ const AboutMe = () => {
         <h1>O mnie</h1>
       </SectionTitle>
       <p>Witaj! Nazywam sie Adrian, jestem studentem czwartego roku Informatyki Stosowanej na AGH. Chciałbym pracować jako Front-End/Full
-        Stack Developer. Najprzyjemniej używa mi się Typescript.</p>
+        Stack Developer.</p>
     </Section>
   )
 }

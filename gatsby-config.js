@@ -5,6 +5,7 @@
  */
 
 module.exports = {
+  pathPrefix: "/Portfolio",
   plugins: [`gatsby-plugin-styled-components`,
     {
       resolve: "gatsby-plugin-react-svg",

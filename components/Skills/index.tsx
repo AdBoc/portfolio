@@ -19,8 +19,26 @@ import Section from "../styles/Section"
 import SectionTitle from "../styles/SectionTitle"
 import Skill from "./Skill"
 
+const SkillsContainer = styled.div`
+  background-color: ${(props) => props.theme.boxColor};
+  border: 1px solid ${(props) => props.theme.boxBorder};
+  box-shadow: 0 5px 5px 0  ${(props) => props.theme.boxShadow}, 0 0 0 1px ${(props) => props.theme.boxShadow2};
+  text-align: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  
+  border-radius: 12px;
+  
+  @media (max-width: 600px) {
+    flex-direction: column;
+    max-width: 17.5em;
+    margin: auto;
+  }
+`
+
 const SkillsColumn = styled.div`
-  border-right: 1px solid #b7b7b7;
+  border-right: 1px solid ${(props) => props.theme.boxBorder};
   flex-grow: 1;
   flex-basis: 0;
   padding: 0.75em;
@@ -31,28 +49,10 @@ const SkillsColumn = styled.div`
    
   @media (max-width: 600px) {
     border-right: none;
-    border-bottom: 1px solid #b7b7b7;
+    border-bottom: 1px solid ${(props) => props.theme.boxBorder};
     &:last-child {
       border-bottom: none;
     }
-  }
-`
-
-const SkillsContainer = styled.div`
-  text-align: center;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  background-color: white;
-  
-  border: 1px solid #b7b7b7;
-  border-radius: 12px;
-  box-shadow: 0 5px 5px 0 rgba(233, 240, 243, 0.5), 0 0 0 1px #E6ECF8;
-  
-  @media (max-width: 600px) {
-    flex-direction: column;
-    max-width: 17.5em;
-    margin: auto;
   }
 `
 
@@ -98,7 +98,7 @@ const Skills = () => {
         </SkillsColumn>
       </SkillsContainer>
       <Description>
-        <p className="desc">Wiem czym są i jak korzystać z: <b>Webpack</b>, <b>Eslint</b>, <b>Babel</b>, <b>Git</b>, <b>GitHub</b></p>
+        <p className="desc">Wiem czym są i jak korzystać z: <b>Webpack</b>, <b>Eslint</b>, <b>Babel</b>, <b>Git</b>, <b>GitHub</b>, <b>Docker</b></p>
         <div>
           <p className="desc">Język angielski: <b>B2</b></p>
           <p className="small-font">(Nie mam problemów z czytaniem dokumentacji)</p>

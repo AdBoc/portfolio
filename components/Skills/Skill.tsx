@@ -7,7 +7,6 @@ const SkillStyle = styled.div`
   align-items: center;
   padding: 0.3em;
   justify-content: center;
-  font-family: "Roboto", sans-serif;
   
  p {
    font-size: 0.85em;
@@ -24,7 +23,7 @@ const Skill: React.FC<Props> = ({ label, svg }) => {
   return (
     <SkillStyle>
       {svg}
-      {label}
+      <p>{label}</p>
     </SkillStyle>
   )
 }

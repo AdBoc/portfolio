@@ -16,13 +16,13 @@ const ProjectStyle = styled.div`
   min-width: 12.5em;
   min-height: 12.5em;
   margin: 0.75em;
-  background-color: white;
-  color: black;
+  background-color: ${(props) => props.theme.boxColor};
+  color: inherit;
   padding: 2em;
   
-  -webkit-box-shadow: 0px 0px 3px 1px rgba(0,0,0,0.25);
-  -moz-box-shadow: 0px 0px 3px 1px rgba(0,0,0,0.25);
-  box-shadow: 0px 0px 3px 1px rgba(0,0,0,0.25);
+  -webkit-box-shadow: 0 0 3px 1px rgba(0,0,0,0.25);
+  -moz-box-shadow: 0 0 3px 1px rgba(0,0,0,0.25);
+  box-shadow: 0 0 3px 1px rgba(0,0,0,0.25);
   
   a {
     display: block;
@@ -52,7 +52,7 @@ const ProjectStyle = styled.div`
     text-align: center;
     transform: translate(-50%, -50%);
     opacity: 0;
-    transition: opacity 0.5s ease;    
+    transition: opacity 0.5s ease;
   }
   
   &:hover{
@@ -64,12 +64,30 @@ const ProjectStyle = styled.div`
     }
   }
  
+  @media (pointer: coarse) {
+    &:hover{
+      .hidden-links {
+        display: none;
+      }
+      .description {
+        opacity: 1;
+      }
+    }
+  }
+    
+  .view-page, .repo-link {
+    color: ${(props) => props.theme.buttonFont};
+    background-color: ${(props) => props.theme.buttonColor};
+    border: 1px solid ${(props) => props.theme.buttonBorder};
+    padding: 0.5em;
+    margin: 1em 0;
+    border-radius: 6px;
+  }
  
   .link-svg-mobile, .git-svg-mobile {
     position: absolute;
     width: 20px;
     display: none;
-    
     @media (pointer: coarse) {
       display: block;
     }
@@ -92,8 +110,8 @@ interface Props {
   gitUrl: string;
   livePageUrl?: string;
 }
-//sprawdz rerendere wpisuja tu console log i patrzac czy jak rodzic sie renderuje to to tez, uzyj use memo??
-const Project: React.FC<Props> = ({ title , description, stack, gitUrl, livePageUrl = false}) => {
+
+const Project: React.FC<Props> = ({ title, description, stack, gitUrl, livePageUrl = false }) => {
   return (
     <ProjectStyle>
       {livePageUrl && <a className="link-svg-mobile" href={`${livePageUrl}`} target="_blank" rel="noopener"><OpenLinkSVG /></a>}
@@ -111,4 +129,4 @@ const Project: React.FC<Props> = ({ title , description, stack, gitUrl, livePage
   )
 }
 
-export default Project
+export default React.memo(Project)
