@@ -16,10 +16,6 @@ body {
     background-color: rgb(246, 247, 248);
 }
 
-p, h1, span, li, h2, a {
-    font-family: "Roboto", "Times New Roman", sans-serif;
-}
-
 a {
     color: inherit;
     text-decoration: none;
@@ -217,4 +213,8 @@ template {
 
 [hidden] {
     display: none;
+}
+
+p, h1, span, li, h2, a, button {
+    font-family: "Roboto", "Times New Roman", sans-serif;
 }

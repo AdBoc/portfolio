@@ -1,17 +1,17 @@
 import React from "react"
-import { SectionTitleWrapper } from "../styles/SectionTitleWrapper"
+import { SectionTitle } from "../styles/SectionTitleWrapper"
+import { useTranslation } from "react-i18next"
 import * as S from "./styles"
 
 const Education = () => {
+  const { t } = useTranslation()
   return (
     <S.Section>
-      <SectionTitleWrapper>
-        <h1>Wykształcenie</h1>
-      </SectionTitleWrapper>
+      <SectionTitle>{t("Education.Title")}</SectionTitle>
       <S.EducationWrapper>
-        <p className="uni">Akademia Górniczo Hutnicza</p>
-        <p className="date">2017-obecnie</p>
-        <p className="class">Kierunek: Informatyka Stosowana</p>
+        <p className="uni">{t("Education.Uni")}</p>
+        <p className="date">{t("Education.Year")}</p>
+        <p className="class">{t("Education.Faculty")}</p>
       </S.EducationWrapper>
     </S.Section>
   )

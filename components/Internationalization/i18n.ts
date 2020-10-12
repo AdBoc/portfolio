@@ -1,31 +1,27 @@
-import i18n from "i18next";
-import { initReactI18next } from "react-i18next";
+import i18n from "i18next"
+import common_pl from "./pl/common_pl.json"
+import common_en from "./en/common_en.json"
+import { initReactI18next } from "react-i18next"
 
-// the translations
-// (tip move them in a JSON file and import them)
 const resources = {
   en: {
-    translation: {
-      "Welcome to React": "Welcome to React and react-i18next"
-    }
+    translation: common_en
   },
   pl: {
-    translation: {
-      "Welcome to React": "Witajcie w React towarzyszu"
-    }
+    translation: common_pl
   }
-};
+}
 
 i18n
   .use(initReactI18next)
   .init({
     resources,
-    lng: "en",
-
-    keySeparator: false,
+    lng: "pl",
+    fallbackLng: "pl",
+    keySeparator: ".", // keySeparator: false,
     interpolation: {
       escapeValue: false
     }
-  });
+  })
 
-export default i18n;
+export default i18n

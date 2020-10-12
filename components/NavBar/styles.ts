@@ -60,7 +60,28 @@ const ThemeSwitcher = styled.div`
   }
 `
 
+const LanguageButton = styled.button`
+    color: inherit;
+    background-color: inherit;
+    margin-right: 2em;
+    padding: 0.1em;
+    border: none;
+    border-bottom: 1px solid rgba(0, 0, 0, 0);
+    transition: border-bottom 250ms;
+    cursor: pointer;
+    min-width: 3.6em;
+    
+    &:hover {
+      border-color: rgba(255, 255, 255, 1);
+    }
+
+    &:focus {
+      outline: 0;
+    }
+`
+
 export {
   Header,
-  ThemeSwitcher
+  ThemeSwitcher,
+  LanguageButton
 };

@@ -1,20 +1,14 @@
 import React from "react"
-import * as S from "./styles"
-import { SectionTitleWrapper } from "../styles/SectionTitleWrapper"
+import { SectionTitle } from "../styles/SectionTitleWrapper"
 import { useTranslation } from "react-i18next"
-
+import * as S from "./styles"
 
 const AboutMe = () => {
-  const { t, i18n } = useTranslation()
+  const { t } = useTranslation()
   return (
     <S.Section>
-      <SectionTitleWrapper>
-        <h1>O mnie</h1>
-      </SectionTitleWrapper>
-      <p>Witaj! Nazywam się Adrian, jestem studentem czwartego roku Informatyki Stosowanej na AGH. Chciałbym pracować jako Front-End/Full
-        Stack Developer.</p>
-      <button onClick={() => {i18n.changeLanguage("pl")}}>Change Translation</button>
-      <p>{t("Welcome to React")}</p>
+      <SectionTitle>{t("AboutMe.Title")}</SectionTitle>
+      <p>{t("AboutMe.Description")}</p>
     </S.Section>
   )
 }

@@ -4,14 +4,14 @@ import Skill from "./Skill"
 import * as S from "./styles"
 import { CssSvg, GatsbySvg, GoSvg, JestSvg, JsSvg, MochaSvg, NodeSvg, ReactSvg, ReduxSvg, SassSvg, TsSvg } from "../SVG/svg"
 import { SectionWrapper } from "../styles/SectionWrapper"
-import { SectionTitleWrapper } from "../styles/SectionTitleWrapper"
+import { SectionTitle } from "../styles/SectionTitleWrapper"
+import { useTranslation } from "react-i18next"
 
 const Skills = () => {
+  const {t} = useTranslation()
   return (
     <SectionWrapper>
-      <SectionTitleWrapper>
-        <h1>Umiejętności</h1>
-      </SectionTitleWrapper>
+      <SectionTitle>{t("Skills.Title")}</SectionTitle>
       <S.SkillsContainer>
         <S.SkillsColumn>
           <h2>Front-end</h2>
@@ -25,7 +25,7 @@ const Skills = () => {
           <Skill label="Styled Components" />
         </S.SkillsColumn>
         <S.SkillsColumn>
-          <h2>Testy</h2>
+          <h2>Testing</h2>
           <Skill label="Jest" svg={<JestSvg />} />
           <Skill label="Mocha" svg={<MochaSvg />} />
           <Skill label="React Testing Library" />
@@ -37,10 +37,10 @@ const Skills = () => {
         </S.SkillsColumn>
       </S.SkillsContainer>
       <S.Description>
-        <p className="desc">Wiem czym są i jak korzystać z: <b>Webpack</b>, <b>Eslint</b>, <b>Babel</b>, <b>Git</b>, <b>GitHub</b>, <b>Docker</b></p>
+        <p className="desc">{t("Skills.AdditionalSkills")} <b>Webpack</b>, <b>Eslint</b>, <b>Babel</b>, <b>Git</b>, <b>GitHub</b>, <b>Docker</b></p>
         <div>
-          <p className="desc">Język angielski: <b>B2</b></p>
-          <p className="small-font">(Nie mam problemów z czytaniem dokumentacji)</p>
+          <p className="desc">{t("Skills.Language")} <b>B2</b></p>
+          <p className="small-font">{t("Skills.LanguageInfo")}</p>
         </div>
       </S.Description>
     </SectionWrapper>

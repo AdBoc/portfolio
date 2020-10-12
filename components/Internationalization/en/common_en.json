@@ -1,0 +1,29 @@
+{
+  "AboutMe": {
+    "Title": "About Me",
+    "Description": "Hi! My name is Adrian. I am currently studying in the fourth year at AGH University of Science and Technology. I would like to work as Front-End/Full Stack Developer."
+  },
+  "Education": {
+    "Title": "Education",
+    "Uni": "AGH university of science and technology",
+    "Year": "2017-present",
+    "Faculty": "Field Of Study: Applied Computer Science"
+  },
+  "Skills": {
+    "Title": "Skills",
+    "AdditionalSkills": "I have also used: ",
+    "Language": "English: ",
+    "LanguageInfo": "(I never had any problems with documentations)"
+  },
+  "Projects": {
+    "Title": "Projects",
+    "Description": "My personal projects I started to develop while learning. Newest projects are at the top, while inspecting them you can see progress I have made in writing code.",
+    "ShowWebsite": "Show Website",
+    "Repository": "Repository",
+    "1": "Web App made for Dungeons and Dragons, It works offline thanks to Service Workers. App has calendar that every user can modify. It allows to create character sheet and modify it.",
+    "2": "Website has registration and login functionality(JWT Token). It allows to send pdf files and them group, sort, modify and mark as read.",
+    "3": "Website has registration and login functionality(JWT Token). Every user can generate song with his custom lyrics and download it later.",
+    "4": "Project made for Internet Engineering. System allows to login, register, add, delete, modify, sort, filter drugs.",
+    "5": "My first Javascript project. Node.js REST API allows to add, delete and modify to do list tasks"
+  }
+}

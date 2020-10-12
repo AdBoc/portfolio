@@ -1,20 +1,18 @@
 import styled from "styled-components"
 
-export const SectionTitleWrapper = styled.div`
-  h1 {
-     font-size: 1.25em;
-     display: flex;
-  }
-  h1:before, h1:after {
+export const SectionTitle = styled.h1`
+  font-size: 1.25em;
+  display: flex;
+  &:before, &:after {
     color: #7c7c7c;
     content: "";
     border-bottom: 1px solid;
     margin: auto 0.25em;
   }
-  h1::before {
+  &::before {
       width: 25px;
   }
-  h1::after {
+  &::after {
       flex: 1;
   }
 `
