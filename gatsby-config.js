@@ -8,14 +8,6 @@ module.exports = {
   pathPrefix: "/portfolio",
   plugins: [`gatsby-plugin-styled-components`,
     {
-      resolve: "gatsby-plugin-react-svg",
-      options: {
-        rule: {
-          include: /assets/
-        }
-      }
-    },
-    {
       resolve: "gatsby-plugin-web-font-loader",
       options: {
         custom: {
