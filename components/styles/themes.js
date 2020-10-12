@@ -11,7 +11,8 @@ export const lightTheme = {
   boxShadow2: "#E6ECF8",
   buttonColor: "#8d8d8d",
   buttonBorder: "#8d8d8d",
-  buttonFont: "#fff"
+  buttonFont: "#fff",
+  footerLabel: "#909090"
 }
 
 export const darkTheme = {
@@ -25,7 +26,8 @@ export const darkTheme = {
   boxShadow2: "#1b1b3e",
   buttonColor: "#172a45",
   buttonBorder: "#64ffda",
-  buttonFont: "#64ffda"
+  buttonFont: "#64ffda",
+  footerLabel: "#8892b0"
 }
 
 export const GlobalStyles = createGlobalStyle`

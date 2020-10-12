@@ -1,6 +1,6 @@
 import styled from "styled-components"
 
-const SectionTitle = styled.div`
+export const SectionTitleWrapper = styled.div`
   h1 {
      font-size: 1.25em;
      display: flex;
@@ -18,5 +18,3 @@ const SectionTitle = styled.div`
       flex: 1;
   }
 `
-
-export default SectionTitle

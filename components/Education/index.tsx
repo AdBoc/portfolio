@@ -1,40 +1,19 @@
 import React from "react"
-
-import styled from "styled-components"
-
-import SectionTitle from "../styles/SectionTitle"
-
-const EducationWrapper = styled.div`
-  width: fit-content;
-  margin: 2.5em auto;
-  .uni{
-    font-size: 1.2em;
-  }
-  .date{ 
-    font-size: 0.8em;
-  }
-  .class {
-    font-size: 0.95em;    
-  }
-`
-
-const Section = styled.section`
-  max-width: 40em;
-  margin: 2.5em auto;
-`
+import { SectionTitleWrapper } from "../styles/SectionTitleWrapper"
+import * as S from "./styles"
 
 const Education = () => {
   return (
-    <Section>
-      <SectionTitle>
+    <S.Section>
+      <SectionTitleWrapper>
         <h1>Wykształcenie</h1>
-      </SectionTitle>
-      <EducationWrapper>
+      </SectionTitleWrapper>
+      <S.EducationWrapper>
         <p className="uni">Akademia Górniczo Hutnicza</p>
         <p className="date">2017-obecnie</p>
         <p className="class">Kierunek: Informatyka Stosowana</p>
-      </EducationWrapper>
-    </Section>
+      </S.EducationWrapper>
+    </S.Section>
   )
 }
 

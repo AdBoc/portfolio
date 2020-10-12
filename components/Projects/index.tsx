@@ -1,27 +1,20 @@
 import React from "react"
-import styled from "styled-components"
 
-import Section from "../styles/Section"
-import SectionTitle from "../styles/SectionTitle"
 import Project from "./Project"
 
-const ProjectsView = styled.div`
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: center;
-  margin: 2.5em 0;
-`
+import * as S from "./styles"
+import { SectionWrapper } from "../styles/SectionWrapper"
+import { SectionTitleWrapper } from "../styles/SectionTitleWrapper"
 
 const Projects = () => {
   return (
-    <Section>
-      <SectionTitle>
+    <SectionWrapper>
+      <SectionTitleWrapper>
         <h1 id="projekty">Projekty</h1>
-      </SectionTitle>
+      </SectionTitleWrapper>
       <p>Własne projekty, które tworzyłem podczas nauki wspomnianych powyżej technologii. Projekty ułożone chronologicznie, więc widać jak ewoluował
         mój sposób pisania kodu (od góry najnowsze)</p>
-      <ProjectsView>
+      <S.ProjectsView>
         <Project
           title="D&D App"
           stack="React | GO | MongoDB"
@@ -53,8 +46,8 @@ const Projects = () => {
           gitUrl="https://github.com/AdBoc/BackendNode"
           stack="Node | MongoDB"
         />
-      </ProjectsView>
-    </Section>
+      </S.ProjectsView>
+    </SectionWrapper>
   )
 }
 
