@@ -8,9 +8,9 @@ import Skills from "../../components/Skills"
 import Footer from "../../components/Footer"
 import Navbar from "../../components/NavBar/Navbar"
 
-import "../../static/normalize.css"
 import { I18nextProvider } from "react-i18next"
 import i18next from "../../components/Internationalization/i18n"
+import "../../static/normalize.css"
 
 export default function Home() {
   return (

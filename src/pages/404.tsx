@@ -1,5 +1,6 @@
 import React from "react"
 import styled from "styled-components"
+import "../../static/normalize.css"
 
 const Error = styled.div`
   display: flex;
@@ -28,7 +29,7 @@ const ErrorPage = () => {
     <Error>
       <p className="http404">404</p>
       <p>Page not Found</p>
-      <button className="home-btn"><a href="http://localhost:8000/">Back Home</a></button>
+      <button className="home-btn"><a href="https://adboc.github.io/portfolio/">Back Home</a></button>
     </Error>
   )
 }
