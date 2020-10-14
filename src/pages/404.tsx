@@ -29,7 +29,7 @@ const ErrorPage = () => {
     <Error>
       <p className="http404">404</p>
       <p>Page not Found</p>
-      <button className="home-btn"><a href="https://adboc.github.io/portfolio/">Back Home</a></button>
+      <button className="home-btn"><a href="https://adboc.github.io/portfolio/" aria-label="Go back to home">Back Home</a></button>
     </Error>
   )
 }

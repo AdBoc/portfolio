@@ -6,7 +6,9 @@
 
 module.exports = {
   pathPrefix: "/portfolio",
-  plugins: [`gatsby-plugin-styled-components`,
+  plugins: [
+    `gatsby-plugin-styled-components`,
+    `gatsby-plugin-react-helmet`,
     {
       resolve: "gatsby-plugin-web-font-loader",
       options: {

@@ -13,7 +13,7 @@ export const GlobalStyles = createGlobalStyle`
     --color-button: #8d8d8d;
     --color-button_border: #8d8d8d;
     --color-button_font: #fff;
-    --color-footer_label: #909090;
+    --color-footer_label: #939393;
   }
 
   html.dark {
