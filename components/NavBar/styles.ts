@@ -7,12 +7,10 @@ const Header = styled.header<{ mode: string }>`
   height: 4em;
   box-shadow: ${props => props.mode === "dark" ? "0 10px 30px -10px rgba(2,12,27,0.7)" : "none"};
   
-  .position-nav {
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-    height: 100%;
-  }
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  
   .nav-item {
     text-decoration: none;
     color: inherit;

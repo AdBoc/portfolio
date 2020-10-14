@@ -8,10 +8,10 @@ import Skills from "../../components/Skills"
 import Footer from "../../components/Footer"
 import Navbar from "../../components/NavBar/Navbar"
 
+import { Helmet } from "react-helmet"
 import { I18nextProvider } from "react-i18next"
 import i18next from "../../components/Internationalization/i18n"
 import "../../static/normalize.css"
-import { Helmet } from "react-helmet"
 
 export default function Home() {
   return (

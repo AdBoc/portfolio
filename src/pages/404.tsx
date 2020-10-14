@@ -1,6 +1,7 @@
 import React from "react"
 import styled from "styled-components"
 import "../../static/normalize.css"
+import { Helmet } from "gatsby-plugin-react-i18next"
 
 const Error = styled.div`
   display: flex;
@@ -26,11 +27,18 @@ const Error = styled.div`
 
 const ErrorPage = () => {
   return (
-    <Error>
-      <p className="http404">404</p>
-      <p>Page not Found</p>
-      <button className="home-btn"><a href="https://adboc.github.io/portfolio/" aria-label="Go back to home">Back Home</a></button>
-    </Error>
+    <>
+      <Helmet>
+        <title>AdBoc Portfolio</title>
+        <meta name="description" content="Web Dev Portfolio Website" />
+        <meta name="author" content="Adrian Boczoń" />
+      </Helmet>
+      <Error>
+        <p className="http404">404</p>
+        <p>Page not Found</p>
+        <button className="home-btn"><a href="https://adboc.github.io/portfolio/" aria-label="Go back to home">Back Home</a></button>
+      </Error>
+    </>
   )
 }
 

@@ -1,6 +1,7 @@
 import React from "react"
-import { SectionTitle } from "../styles/SectionTitleWrapper"
 import { useTranslation } from "react-i18next"
+
+import { SectionTitle } from "../styles/SectionTitleWrapper"
 import * as S from "./styles"
 
 const Education = () => {

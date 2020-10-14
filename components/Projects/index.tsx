@@ -1,11 +1,11 @@
 import React from "react"
+import { useTranslation } from "react-i18next"
 
 import Project from "./Project"
 
-import * as S from "./styles"
 import { SectionWrapper } from "../styles/SectionWrapper"
 import { SectionTitle } from "../styles/SectionTitleWrapper"
-import { useTranslation } from "react-i18next"
+import * as S from "./styles"
 
 const Projects = () => {
   const { t } = useTranslation()

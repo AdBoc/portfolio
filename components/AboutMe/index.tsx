@@ -1,5 +1,6 @@
 import React from "react"
 import { SectionTitle } from "../styles/SectionTitleWrapper"
+
 import { useTranslation } from "react-i18next"
 import * as S from "./styles"
 
