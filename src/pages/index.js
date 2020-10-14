@@ -20,7 +20,7 @@ export default function Home() {
         <title>AdBoc Portfolio</title>
         <meta name="description" content="Web Dev Portfolio Website" />
         <meta name="author" content="Adrian Boczoń" />
-        <link rel="preload" href="/fonts/fonts.css" as="style" />
+        <link rel="preload" href="/fonts/fonts.css" as="style" crossOrigin={true}/>
       </Helmet>
       <ThemeContextProvider>
         <I18nextProvider i18n={i18next}>

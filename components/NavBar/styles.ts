@@ -33,6 +33,7 @@ const ThemeSwitcher = styled.div<{ visibility: string }>`
   display: inline-block;    
   margin-right: 2em;
   padding: 0.1em;
+  cursor: pointer;
   .sun {
     position: relative;
     border-radius: 100%;

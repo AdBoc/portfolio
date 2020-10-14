@@ -1,20 +1,6 @@
-@font-face {
-    font-family: "Lato";
-    src: url("./fonts/Lato-Light.ttf");
-}
-
-@font-face {
-    font-family: "Roboto";
-    src: url("./fonts/Roboto-Regular.ttf");
-}
-
 :root {
     box-sizing: border-box;
 }
-
-/*body {*/
-/*    background-color: rgb(246, 247, 248);*/
-/*}*/
 
 a {
     color: inherit;
