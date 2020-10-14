@@ -12,9 +12,9 @@
     box-sizing: border-box;
 }
 
-body {
-    background-color: rgb(246, 247, 248);
-}
+/*body {*/
+/*    background-color: rgb(246, 247, 248);*/
+/*}*/
 
 a {
     color: inherit;

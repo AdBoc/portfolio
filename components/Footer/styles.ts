@@ -5,9 +5,9 @@ export const FooterStyle = styled.footer`
   flex-direction: column;
   justify-content: center;
   
-  background-color: ${(props) => props.theme.secondaryColor};
-  border-top: 1px solid ${(props) => props.theme.boxBorder};
-  color: ${(props) => props.theme.secondaryFontColor};
+  background-color: var(--color-secondary);
+  border-top: 1px solid var(--color-box_border);
+  color: var(--color-secondary_font);
   height: 8em;
 
   .icons {
@@ -28,7 +28,7 @@ export const FooterStyle = styled.footer`
   .label {
     display: block;
     margin: 0 auto;
-    color: ${(props) => props.theme.footerLabel};
+    color: var(--color-footer_label);
     font-size: 0.85em;
     align-self: flex-end;
   }

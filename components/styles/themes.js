@@ -1,38 +1,38 @@
 import { createGlobalStyle } from "styled-components"
 
-export const lightTheme = {
-  mainColor: "rgb(246, 247, 248)",
-  secondaryColor: "#2C2C2C",
-  fontColor: "#000000",
-  secondaryFontColor: "#DFDFDF",
-  boxColor: "#fff",
-  boxBorder: "#b7b7b7",
-  boxShadow: "rgba(233,240,243,0.5)",
-  boxShadow2: "#E6ECF8",
-  buttonColor: "#8d8d8d",
-  buttonBorder: "#8d8d8d",
-  buttonFont: "#fff",
-  footerLabel: "#909090"
-}
-
-export const darkTheme = {
-  mainColor: "#0a192f",
-  secondaryColor: "#0a192f",
-  fontColor: "#ccd6f6",
-  secondaryFontColor: "#ccd6f6",
-  boxColor: "#172a45",
-  boxBorder: "#2a3554",
-  boxShadow: "#0f0f29",
-  boxShadow2: "#1b1b3e",
-  buttonColor: "#172a45",
-  buttonBorder: "#64ffda",
-  buttonFont: "#64ffda",
-  footerLabel: "#8892b0"
-}
-
 export const GlobalStyles = createGlobalStyle`
-  body {
-    background-color: ${(props) => props.theme.mainColor};
-    color: ${(props) => props.theme.fontColor};
-  }  
+  :root {
+    --color-main: rgb(246, 247, 248);
+    --color-secondary: #2C2C2C;
+    --color-font: #000000;
+    --color-secondary_font: #DFDFDF;
+    --color-box: #fff;
+    --color-box_border: #b7b7b7;
+    --color-box_shadow: rgba(233,240,243,0.5);
+    --color-box_shadow2: #E6ECF8;
+    --color-button: #8d8d8d;
+    --color-button_border: #8d8d8d;
+    --color-button_font: #fff;
+    --color-footer_label: #909090;
+  }
+
+  html.dark {
+    --color-main: #0a192f;
+    --color-secondary: #0a192f;
+    --color-font: #ccd6f6;
+    --color-secondary_font: #ccd6f6;
+    --color-box: #172a45;
+    --color-box_border: #2a3554;
+    --color-box_shadow: #0f0f29;
+    --color-box_shadow2: #1b1b3e;
+    --color-button: #172a45;
+    --color-button_border: #64ffda;
+    --color-button_font: #64ffda;
+    --color-footer_label: #8892b0;
+  }
+  
+  html {
+    background-color: var(--color-main);
+    color: var(--color-font);
+  }
 `

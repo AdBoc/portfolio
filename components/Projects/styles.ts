@@ -19,7 +19,7 @@ const ProjectStyle = styled.div`
   min-width: 12.5em;
   min-height: 12.5em;
   margin: 0.75em;
-  background-color: ${(props) => props.theme.boxColor};
+  background-color: var(--color-box);
   color: inherit;
   padding: 2em;
   
@@ -79,9 +79,9 @@ const ProjectStyle = styled.div`
   }
     
   .view-page, .repo-link {
-    color: ${(props) => props.theme.buttonFont};
-    background-color: ${(props) => props.theme.buttonColor};
-    border: 1px solid ${(props) => props.theme.buttonBorder};
+    color: var(--color-button_font);
+    background-color: var(--color-button);
+    border: 1px solid var(--color-button_border);
     padding: 0.5em;
     margin: 1em 0;
     border-radius: 6px;
@@ -106,7 +106,12 @@ const ProjectStyle = styled.div`
   }
 `
 
+const Description = styled.p`
+  margin: 1em;
+`
+
 export {
   ProjectStyle,
-  ProjectsView
+  ProjectsView,
+  Description
 }

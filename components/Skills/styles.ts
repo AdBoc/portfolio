@@ -1,9 +1,9 @@
 import styled from "styled-components"
 
 const SkillsContainer = styled.div`
-  background-color: ${(props) => props.theme.boxColor};
-  border: 1px solid ${(props) => props.theme.boxBorder};
-  box-shadow: 0 5px 5px 0  ${(props) => props.theme.boxShadow}, 0 0 0 1px ${(props) => props.theme.boxShadow2};
+  background-color: var(--color-box);
+  border: 1px solid var(--color-box_border);
+  box-shadow: 0 5px 5px 0 var(--color-box_shadow), 0 0 0 1px var(--color-box_shadow2);
   text-align: center;
   display: flex;
   flex-direction: row;
@@ -19,7 +19,7 @@ const SkillsContainer = styled.div`
 `
 
 const SkillsColumn = styled.div`
-  border-right: 1px solid ${(props) => props.theme.boxBorder};
+  border-right: 1px solid var(--color-box_border);
   flex-grow: 1;
   flex-basis: 0;
   padding: 0.75em;
@@ -30,7 +30,7 @@ const SkillsColumn = styled.div`
    
   @media (max-width: 600px) {
     border-right: none;
-    border-bottom: 1px solid ${(props) => props.theme.boxBorder};
+    border-bottom: 1px solid var(--color-box_border);
     &:last-child {
       border-bottom: none;
     }

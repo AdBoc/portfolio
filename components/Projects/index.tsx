@@ -12,7 +12,7 @@ const Projects = () => {
   return (
     <SectionWrapper>
       <SectionTitle>{t("Projects.Title")}</SectionTitle>
-      <p>{t("Projects.Description")}</p>
+      <S.Description>{t("Projects.Description")}</S.Description>
       <S.ProjectsView>
         <Project
           id="1"

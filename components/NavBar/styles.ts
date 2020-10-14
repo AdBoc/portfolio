@@ -1,8 +1,8 @@
 import styled from "styled-components"
 
 const Header = styled.header<{ mode: string }>`
-  background-color: ${(props) => props.theme.secondaryColor};
-  color: ${(props) => props.theme.secondaryFontColor};
+  background-color: var(--color-secondary);
+  color: var(--color-secondary_font);
   width: 100%;
   height: 4em;
   box-shadow: ${props => props.mode === "dark" ? "0 10px 30px -10px rgba(2,12,27,0.7)" : "none"};
@@ -28,7 +28,8 @@ const Header = styled.header<{ mode: string }>`
   }
 `
 
-const ThemeSwitcher = styled.div`
+const ThemeSwitcher = styled.div<{ visibility: string }>`
+ visibility: ${props => props.visibility === undefined ? "hidden" : "visible"};
   display: inline-block;    
   margin-right: 2em;
   padding: 0.1em;
@@ -37,7 +38,7 @@ const ThemeSwitcher = styled.div`
     border-radius: 100%;
     width: 1.5rem;
     height: 1.5rem;
-    background: linear-gradient(40deg, #FF0080,#FF8C00 70%);
+    background: linear-gradient(40deg, #FF0080, #FF8C00 70%);
     margin: 0 0 0 0;
   }
   .moon {
@@ -46,7 +47,7 @@ const ThemeSwitcher = styled.div`
     right: 0;
     width: 1.05rem;
     height: 1.05rem;
-    background: ${(props) => props.theme.secondaryColor};
+    background: var(--color-secondary);
     transform: scale(0);
     transform-origin: top right;
     transition: transform .6s cubic-bezier(0.645, 0.045, 0.355, 1);
@@ -56,7 +57,7 @@ const ThemeSwitcher = styled.div`
   }
   .moon-scale {
     transform: scale(1);
-    background: ${(props) => props.theme.secondaryColor};
+    background: var(--color-secondary);
   }
 `
 
@@ -84,4 +85,4 @@ export {
   Header,
   ThemeSwitcher,
   LanguageButton
-};
+}

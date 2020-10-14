@@ -18,7 +18,7 @@ i18n
     resources,
     lng: "pl",
     fallbackLng: "pl",
-    keySeparator: ".", // keySeparator: false,
+    keySeparator: ".",
     interpolation: {
       escapeValue: false
     }
