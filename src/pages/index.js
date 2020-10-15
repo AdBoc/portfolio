@@ -11,16 +11,16 @@ import Navbar from "../../components/NavBar/Navbar"
 import { Helmet } from "react-helmet"
 import { I18nextProvider } from "react-i18next"
 import i18next from "../../components/Internationalization/i18n"
+
 import "../../static/normalize.css"
 
 export default function Home() {
   return (
     <>
-    <Helmet htmlAttributes={{"lang": "pl"}}>
+      <Helmet htmlAttributes={{ "lang": "pl" }}>
         <title>AdBoc Portfolio</title>
         <meta name="description" content="Web Dev Portfolio Website" />
         <meta name="author" content="Adrian Boczoń" />
-        <link rel="preload" href="/fonts/fonts.css" as="style" crossOrigin={true}/>
       </Helmet>
       <ThemeContextProvider>
         <I18nextProvider i18n={i18next}>

@@ -6,7 +6,7 @@ export const GlobalStyles = createGlobalStyle`
     --color-secondary: #2C2C2C;
     --color-font: #000000;
     --color-secondary_font: #DFDFDF;
-    --color-box: #fff;
+    --color-box: #fff; //#e5e5e5
     --color-box_border: #b7b7b7;
     --color-box_shadow: rgba(233,240,243,0.5);
     --color-box_shadow2: #E6ECF8;
