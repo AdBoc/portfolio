@@ -9,7 +9,9 @@ const AboutMe = () => {
   return (
     <S.Section>
       <SectionTitle>{t("AboutMe.Title")}</SectionTitle>
-      <p>{t("AboutMe.Description")}</p>
+      <S.AboutMeWrapper>
+        <p>{t("AboutMe.Description")}</p>
+      </S.AboutMeWrapper>
     </S.Section>
   )
 }

@@ -1,7 +1,7 @@
 import React from "react"
+import { Helmet } from "gatsby-plugin-react-i18next"
 import styled from "styled-components"
 import "../../static/normalize.css"
-import { Helmet } from "gatsby-plugin-react-i18next"
 
 const Error = styled.div`
   display: flex;
@@ -30,6 +30,7 @@ const ErrorPage = () => {
     <>
       <Helmet>
         <title>AdBoc Portfolio</title>
+        <link rel="icon" type="image/png" href="/portfolio/favicon.ico" sizes="16x16" />
         <meta name="description" content="Web Dev Portfolio Website" />
         <meta name="author" content="Adrian Boczoń" />
       </Helmet>

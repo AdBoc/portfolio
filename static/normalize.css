@@ -204,3 +204,7 @@ template {
 p, h1, span, li, h2, a, button {
     font-family: "Roboto";
 }
+
+.svg-on-hover:hover {
+    stroke: white;
+}

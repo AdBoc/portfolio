@@ -19,6 +19,7 @@ export default function Home() {
     <>
       <Helmet htmlAttributes={{ "lang": "pl" }}>
         <title>AdBoc Portfolio</title>
+        <link rel="icon" type="image/png" href="/portfolio/favicon.ico" sizes="16x16" />
         <meta name="description" content="Web Dev Portfolio Website" />
         <meta name="author" content="Adrian Boczoń" />
       </Helmet>

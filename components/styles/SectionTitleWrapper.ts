@@ -10,9 +10,10 @@ export const SectionTitle = styled.h1`
     margin: auto 0.25em;
   }
   &::before {
-      width: 25px;
+    flex: 1;
+    //width: 25px;
   }
   &::after {
-      flex: 1;
+    flex: 1;
   }
 `

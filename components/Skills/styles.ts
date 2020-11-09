@@ -8,6 +8,7 @@ const SkillsContainer = styled.div`
   display: flex;
   flex-direction: row;
   justify-content: center;
+  margin-top: 1.5em;
   
   border-radius: 12px;
   
@@ -22,7 +23,7 @@ const SkillsColumn = styled.div`
   border-right: 1px solid var(--color-box_border);
   flex-grow: 1;
   flex-basis: 0;
-  padding: 0.75em;
+  padding: 0.75em 0.75em 1.75em 0.75em;
   
   &:last-child {
     border-right: none;
