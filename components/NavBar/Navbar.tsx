@@ -15,14 +15,14 @@ const Navbar: React.FC = () => {
 
   return (
     <S.NavBar mode={theme}>
-      <S.NavBarItem>
+      <S.NavBarItem underline>
         <a href="https://github.com/adboc" aria-label="Github Link" target="_blank" rel="noopener noreferrer">Github</a>
       </S.NavBarItem>
       <S.LanguageButton
         onClick={() => i18n.language === "pl" ? i18n.changeLanguage("en") : i18n.changeLanguage("pl")}>
         {languages[i18n.language]}
       </S.LanguageButton>
-      <S.NavBarItem>
+      <S.NavBarItem underline={false}>
         <p className="nav-item-label">CV</p>
         <S.Dropdown>
           <a href="CvPl.pdf" aria-label="CV po polsku" target="_blank" rel="noopener noreferrer">Polski</a>

@@ -27,10 +27,10 @@ const Dropdown = styled.div`
     background: var(--color-secondary);
     
     a {
-     padding: 0.5em 0;
+     padding: 0.75em 0;
      width: 100%;
      font-weight: 300;
-     font-size: 1.2rem;
+     font-size: 1rem;
      display: block;
       &:hover{
         background: #454545;
@@ -38,14 +38,14 @@ const Dropdown = styled.div`
     }
 `
 
-const NavBarItem = styled.div`
+const NavBarItem = styled.div<{underline: boolean}>`
     position: relative;
     text-decoration: none;
     color: inherit;
     display: inline;
     margin-right: 2em;
     padding: 0.1em;
-    border-bottom: 1px solid;
+    border-bottom: ${props => props.underline ? "1px solid" : "none"};
     border-color: rgba(0, 0, 0, 0);
     transition: border-bottom 250ms; 
     

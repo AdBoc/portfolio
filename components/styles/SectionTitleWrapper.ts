@@ -1,7 +1,7 @@
 import styled from "styled-components"
 
 export const SectionTitle = styled.h1`
-  font-size: 1.4em;
+  font-size: 1.3em;
   display: flex;
   &:before, &:after {
     color: #7c7c7c;
