@@ -85,6 +85,9 @@ const ProjectStyle = styled.div`
     padding: 0.5em;
     margin: 1em 0;
     border-radius: 6px;
+    &:hover {
+       background-color: var(--color-button_border);
+    }  
   }
  
   .link-svg-mobile, .git-svg-mobile {

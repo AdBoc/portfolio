@@ -33,7 +33,7 @@ const Dropdown = styled.div`
      font-size: 1rem;
      display: block;
       &:hover{
-        background: #454545;
+        background: var(--color-button);
       }
     }
 `

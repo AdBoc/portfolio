@@ -6,12 +6,13 @@ export const GlobalStyles = createGlobalStyle`
     --color-secondary: #2C2C2C;
     --color-font: #000000;
     --color-secondary_font: #DFDFDF;
-    --color-box: #fff; //#e5e5e5
+    --color-box: #fff;
     --color-box_border: #b7b7b7;
     --color-box_shadow: rgba(233,240,243,0.5);
     --color-box_shadow2: #E6ECF8;
-    --color-button: #8d8d8d;
+    --color-button: #454545;
     --color-button_border: #8d8d8d;
+    --color-button_hover: #656565;
     --color-button_font: #fff;
     --color-footer_label: #939393;
   }
@@ -26,6 +27,7 @@ export const GlobalStyles = createGlobalStyle`
     --color-box_shadow: #0f0f29;
     --color-box_shadow2: #1b1b3e;
     --color-button: #172a45;
+    --color-button_hover: #172a45;
     --color-button_border: #64ffda;
     --color-button_font: #64ffda;
     --color-footer_label: #8892b0;
