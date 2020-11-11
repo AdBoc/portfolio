@@ -1,6 +1,6 @@
 import styled from "styled-components"
 
-const Header = styled.header<{ mode: string }>`
+const NavBar = styled.header<{ mode: string }>`
   background-color: var(--color-secondary);
   color: var(--color-secondary_font);
   width: 100%;
@@ -10,8 +10,36 @@ const Header = styled.header<{ mode: string }>`
   display: flex;
   justify-content: flex-end;
   align-items: center;
-  
-  .nav-item {
+`
+
+const Dropdown = styled.div`
+    opacity: 0;
+    transition: transform .3s cubic-bezier(0.88, 0, 0, 1), opacity .3s ease-in-out;
+    transform: translateY(-7.5rem);
+    position: absolute;
+    font: inherit;
+    width: 5em;
+    left: 50%;
+    margin: 0 0 0 -2.3em;
+    text-align: center;
+    
+    z-index: 1;
+    background: var(--color-secondary);
+    
+    a {
+     padding: 0.5em 0;
+     width: 100%;
+     font-weight: 300;
+     font-size: 1.2rem;
+     display: block;
+      &:hover{
+        background: #454545;
+      }
+    }
+`
+
+const NavBarItem = styled.div`
+    position: relative;
     text-decoration: none;
     color: inherit;
     display: inline;
@@ -19,10 +47,18 @@ const Header = styled.header<{ mode: string }>`
     padding: 0.1em;
     border-bottom: 1px solid;
     border-color: rgba(0, 0, 0, 0);
-    transition: border-bottom 250ms;
-  }
-  .nav-item:hover {
-    border-color: rgba(255, 255, 255, 1);
+    transition: border-bottom 250ms; 
+    
+    .nav-item-label {
+      cursor: pointer;
+    }
+    
+    &:hover {
+      border-color: rgba(255, 255, 255, 1);
+      ${Dropdown} {
+        opacity: 1;
+        transform: translateY(0);
+    }
   }
 `
 
@@ -81,7 +117,9 @@ const LanguageButton = styled.button`
 `
 
 export {
-  Header,
+  NavBar,
+  NavBarItem,
+  Dropdown,
   ThemeSwitcher,
   LanguageButton
 }

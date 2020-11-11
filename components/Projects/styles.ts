@@ -5,7 +5,7 @@ const ProjectsView = styled.div`
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: center;
-  margin: 2.5em 0;
+  margin: 2em 0;
 `
 const ProjectStyle = styled.div`
   flex: 0 0;
@@ -107,7 +107,7 @@ const ProjectStyle = styled.div`
 `
 
 const Description = styled.p`
-  margin: 1em;
+  margin: 1.5em;
 `
 
 export {
