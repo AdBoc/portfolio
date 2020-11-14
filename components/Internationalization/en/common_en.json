@@ -1,7 +1,7 @@
 {
   "AboutMe": {
     "Title": "About Me",
-    "Description": "My name is Adrian. I am currently studying in the fourth year at AGH University of Science and Technology. I would like to work as Front-End/Full Stack Developer."
+    "Description": "My name is Adrian. I am a fourth year student of bachelor in applied computer science. I would like to work as Front-End/Full Stack Developer."
   },
   "Education": {
     "Title": "Education",
@@ -17,7 +17,7 @@
   },
   "Projects": {
     "Title": "Projects",
-    "Description": "My personal projects I started to develop while learning. Newest projects are at the top, while inspecting them you can see progress I have made in writing code.",
+    "Description": "My personal projects I started to develop while learning. Newest projects are on the top, while inspecting them you can see progress I have made in coding.",
     "ShowWebsite": "Show Website",
     "Repository": "Repository",
     "1": "Web App made for Dungeons and Dragons, It works offline thanks to Service Workers. App has calendar that every user can modify. It allows to create character sheet and modify it.",
