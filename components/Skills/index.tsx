@@ -2,7 +2,7 @@ import React from "react"
 import { useTranslation } from "react-i18next"
 
 import Skill from "./Skill"
-import { CssSvg, GatsbySvg, GoSvg, JestSvg, JsSvg, MochaSvg, NodeSvg, ReactSvg, ReduxSvg, SassSvg, TsSvg } from "../SVG/svg"
+import { CssSvg, GatsbySvg, GoSvg, HtmlSvg, JestSvg, JsSvg, MochaSvg, NodeSvg, ReactSvg, ReduxSvg, SassSvg, TsSvg } from "../SVG/svg"
 
 import { SectionWrapper } from "../styles/SectionWrapper"
 import { SectionTitle } from "../styles/SectionTitleWrapper"
@@ -17,8 +17,9 @@ const Skills = () => {
       <S.SkillsContainer>
         <S.SkillsColumn>
           <h2>Front-end</h2>
+          <Skill label="HTML" svg={<HtmlSvg />} />
           <Skill label="CSS" svg={<CssSvg />} />
-          <Skill label="HTML" svg={<SassSvg />} />
+          <Skill label="Sass" svg={<SassSvg />} />
           <Skill label="React" svg={<ReactSvg />} />
           <Skill label="Redux" svg={<ReduxSvg />} />
           <Skill label="Gatsby" svg={<GatsbySvg />} />
